@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ClassroomPlus",
+    "section": "",
+    "text": "ClassroomPlus es una serie de extensiones para la API de Google Classroom en Google Apps Script, diseñadas para facilitar la funcionalidad e integración dentro del ecosistema de Google Apps Script.\n\n\n\nGestión de Cursos: Listar todos los cursos, obtener cursos por enlace alternativo.\nGestión de Estudiantes: Listar todos los estudiantes de un curso, añadir y eliminar estudiantes en bloque.\nGestión de Profesores: Añadir profesores en bloque a un curso.\nGestión de Temas: Crear temas en bloque en un curso.\nGestión de Invitaciones: Crear y eliminar invitaciones en bloque para un curso.\n\n\n\n\n\nClona el repositorio:\ngit clone https://github.com/tu-usuario/classroomplus.git\ncd classroomplus\nInstala las dependencias\nnpm install\nConfigura clasp con tu script de Google Apps:\nclasp login\nclasp push\n\n\n\n\n\n\nconst courses = Classroom.Courses.listAll();\nconsole.log(courses);\n\n\n\nconst course = Classroom.Courses.getByAlternateLink('https://classroom.google.com/c/ID_DEL_CURSO');\nconsole.log(course);\n\n\n\nClassroom.Courses.Students.createBulk('courseId', ['userId1', 'userId2']);\n\n\n\nClassroom.Courses.Students.removeBulk('courseId', ['userId1', 'userId2']);\n\n\n\nClassroom.Courses.Topics.createBulk('courseId', ['Topic1', 'Topic2']);\n\n\n\nClassroom.Invitations.createBulk('courseId', 'STUDENT', ['userId1', 'userId2']);\n\n\n\nClassroom.Invitations.removeBulk('courseId', 'STUDENT', ['userId1', 'userId2']);\n\n\n\n\nPara ejecutar las pruebas, utiliza el siguiente comando:\nnpm test"
+  },
+  {
+    "objectID": "index.html#características",
+    "href": "index.html#características",
+    "title": "ClassroomPlus",
+    "section": "",
+    "text": "Gestión de Cursos: Listar todos los cursos, obtener cursos por enlace alternativo.\nGestión de Estudiantes: Listar todos los estudiantes de un curso, añadir y eliminar estudiantes en bloque.\nGestión de Profesores: Añadir profesores en bloque a un curso.\nGestión de Temas: Crear temas en bloque en un curso.\nGestión de Invitaciones: Crear y eliminar invitaciones en bloque para un curso."
+  },
+  {
+    "objectID": "index.html#instalación",
+    "href": "index.html#instalación",
+    "title": "ClassroomPlus",
+    "section": "",
+    "text": "Clona el repositorio:\ngit clone https://github.com/tu-usuario/classroomplus.git\ncd classroomplus\nInstala las dependencias\nnpm install\nConfigura clasp con tu script de Google Apps:\nclasp login\nclasp push"
+  },
+  {
+    "objectID": "index.html#uso",
+    "href": "index.html#uso",
+    "title": "ClassroomPlus",
+    "section": "",
+    "text": "const courses = Classroom.Courses.listAll();\nconsole.log(courses);\n\n\n\nconst course = Classroom.Courses.getByAlternateLink('https://classroom.google.com/c/ID_DEL_CURSO');\nconsole.log(course);\n\n\n\nClassroom.Courses.Students.createBulk('courseId', ['userId1', 'userId2']);\n\n\n\nClassroom.Courses.Students.removeBulk('courseId', ['userId1', 'userId2']);\n\n\n\nClassroom.Courses.Topics.createBulk('courseId', ['Topic1', 'Topic2']);\n\n\n\nClassroom.Invitations.createBulk('courseId', 'STUDENT', ['userId1', 'userId2']);\n\n\n\nClassroom.Invitations.removeBulk('courseId', 'STUDENT', ['userId1', 'userId2']);"
+  },
+  {
+    "objectID": "index.html#pruebas",
+    "href": "index.html#pruebas",
+    "title": "ClassroomPlus",
+    "section": "",
+    "text": "Para ejecutar las pruebas, utiliza el siguiente comando:\nnpm test"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
